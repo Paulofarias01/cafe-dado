@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-height: 100vh;
+    background: url(imagens/Monopoly.png) no-repeat;
+    background-size:cover ;
+    background-position: left;
+
+  }
+
+div {
+    background-color: #b8b879;
+    padding: 40px;
+    border-radius: 15px;
+    color:black;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+/*button {
+    background-color: brown ;
+    border: none;
+    padding: 5px;
+    width: 100%;
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+}*/
+
+/* testes abaixo: pode deixar pois é a decoração */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #30291e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #b8a75f; 
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+  }
+  
+  .navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+  }
+  
+  .navigation a:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+  }
+  
+  .navigation .btnLogin-popup:houver {
+    background: #fff;
+    color: #132938;
+  }
+
+  img {
+    height: 50px;
+    width: 100px;
+    background-color:  #151616;
+    position: center;
+  }
